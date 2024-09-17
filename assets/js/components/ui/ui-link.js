@@ -1,11 +1,10 @@
-import { cn } from "./../../libraries/utilities.js";
+import { cn } from "../../libraries/utilities.js";
 import { html, render } from "https://esm.run/uhtml@4.5.11";
 
 /**
  * @element ui-link
  *
  * @attr {string} href
- * @attr {"spa" | "external"} [type]
  * @attr {"_blank"} [target]
  * @attr {string} [class]
  */
@@ -23,11 +22,7 @@ class UILink extends HTMLElement {
     render(
       this,
       html`
-        <a
-          class=${cn("text-blue-600 hover:text-blue-400", this.getAttribute("class"), this.getAttribute("type") === "spa" && "spa")}
-          href=${this.getAttribute("href")}
-          target=${this.getAttribute("target")}
-        >
+        <a class=${cn("text-blue-600 hover:text-blue-400", this.getAttribute("class"))} href=${this.getAttribute("href")} target=${this.getAttribute("target")}>
           ${this.content}
         </a>
       `

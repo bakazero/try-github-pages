@@ -1,4 +1,4 @@
-import { cn, toMonetary } from "./../../libraries/utilities.js";
+import { cn, toMonetary } from "../../libraries/utilities.js";
 import { html, render } from "https://esm.run/uhtml@4.5.11";
 import "https://esm.run/iconify-icon@2.1.0";
 import "./ui-button.js";

@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Ini login page" />
     <title>Login Page</title>
-    <link rel="icon" href="./../favicon.ico" />
-    <link rel="stylesheet" href="./../assets/css/minify/choices.min.css" />
-    <link rel="stylesheet" href="./../assets/css/minify/filepond.min.css" />
-    <link rel="stylesheet" href="./../assets/css/minify/flatpickr.min.css" />
-    <link rel="stylesheet" href="./../assets/css/minify/micromodal.min.css" />
-    <link rel="stylesheet" href="./../assets/css/minify/notify.min.css" />
-    <link rel="stylesheet" href="./../assets/css/minify/style.min.css" />
-    <script src="./../assets/js/components/ui/ui-link.js" type="module" defer></script>
-    <script src="./../assets/js/components/form/fo-input.js" type="module" defer></script>
-    <script src="./../assets/js/components/form/fo-label.js" type="module" defer></script>
-    <script src="./../assets/js/components/form/fo-error.js" type="module" defer></script>
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/minify/choices.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/filepond.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/flatpickr.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/micromodal.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/notify.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/style.min.css" />
+    <script src="./auth.js" type="module"></script>
+    <script src="../assets/js/components/ui/ui-link.js" type="module" defer></script>
+    <script src="../assets/js/components/ui/ui-button.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-input.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-label.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-error.js" type="module" defer></script>
     <script src="./script.js" type="module" defer></script>
   </head>
 
@@ -24,14 +26,33 @@
       <header>
         <h1>Header</h1>
         <nav>
-          <ui-link href="/" type="spa">Home</ui-link>
-          <ui-link href="/about" type="spa">About</ui-link>
-          <ui-link href="/login" type="spa">Login</ui-link>
+          <ui-link href="/">Home</ui-link>
+          <ui-link href="/about">About</ui-link>
+          <ui-link href="/login">Login</ui-link>
         </nav>
       </header>
+
+      <!-- Content  -->
       <div>
-        <h1 class="text-lg font-bold">Landing Page</h1>
+        <h1 class="text-lg font-bold">Login Page</h1>
+        <form id="login-form" class="my-4 space-y-4 max-w-xl">
+          <div>
+            <fo-label for="username" label="Username"></fo-label>
+            <fo-input name="username" value="waw"></fo-input>
+            <fo-error name="username"></fo-error>
+          </div>
+          <div>
+            <fo-label for="password" label="Password"></fo-label>
+            <fo-input name="password" type="password" value="waw"></fo-input>
+            <fo-error name="password"></fo-error>
+          </div>
+          <div>
+            <ui-button type="submit">Login</ui-button>
+          </div>
+        </form>
       </div>
+      <!-- End of content  -->
+
       <footer>Footer</footer>
     </div>
   </body>
