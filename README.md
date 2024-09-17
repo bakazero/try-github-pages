@@ -40,3 +40,17 @@ tailwindcss -i ./assets/css/raw/notify.css -o ./assets/css/minify/notify.min.css
 tailwindcss -i ./assets/css/raw/nprogress.css -o ./assets/css/minify/nprogress.min.css --minify
 tailwindcss -i ./assets/css/raw/style.css -o ./assets/css/minify/style.min.css --minify
 ```
+
+## Notes
+
+On Development, change base:
+
+```html
+<base href="/" />
+```
+
+On push, change base:
+
+```html
+<base href="https://bakazero.github.io/try-github-pages/" />
+```
