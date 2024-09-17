@@ -15,7 +15,7 @@ if (form instanceof HTMLFormElement) {
     const token = "mhwahahahaha";
     await setAuth(token);
 
-    window.location.assign("/dasboard/");
+    window.location.assign("/dashboard");
   });
 }
 

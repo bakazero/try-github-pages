@@ -1,4 +1,4 @@
 import { getAuth } from "../assets/js/libraries/cookie.js";
 
 const auth = await getAuth();
-if (auth) window.location.replace("/dashboard");
+if (!auth) window.location.replace("/login");

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ini dashboard page" />
+    <title>Dashboard Page</title>
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/minify/choices.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/filepond.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/flatpickr.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/micromodal.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/notify.min.css" />
+    <link rel="stylesheet" href="../assets/css/minify/style.min.css" />
+    <script src="./auth.js" type="module"></script>
+    <script src="../logout.js" type="module" defer></script>
+    <script src="../assets/js/components/ui/ui-link.js" type="module" defer></script>
+    <script src="../assets/js/components/ui/ui-button.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-input.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-label.js" type="module" defer></script>
+    <script src="../assets/js/components/form/fo-error.js" type="module" defer></script>
+    <script src="./script.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="space-y-4 m-4">
+      <header>
+        <h1>Header</h1>
+        <nav>
+          <ui-link href="/dashboard">Dashboard</ui-link>
+          <ui-link href="/component">Component</ui-link>
+          <ui-link href="/form">Form</ui-link>
+          <ui-link href="/table">Table</ui-link>
+          <ui-link href="/user">User</ui-link>
+          <ui-link href="/logout">Logout</ui-link>
+        </nav>
+      </header>
+
+      <!-- Content  -->
+      <div>
+        <h1 class="text-lg font-bold">Dashboard Page</h1>
+      </div>
+      <!-- End of content  -->
+    </div>
+  </body>
+</html>

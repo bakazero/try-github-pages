@@ -4,10 +4,10 @@ export const setAuth = async (token) => {
   await setCookieWithExpireDay("token", token, 1);
 };
 
-export const getAuth = () => {
+export const getAuth = async () => {
   return getCookie("token");
 };
 
-export const removeAuth = () => {
+export const removeAuth = async () => {
   deleteCookie("token");
 };
