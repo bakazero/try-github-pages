@@ -41,16 +41,16 @@ tailwindcss -i ./assets/css/raw/nprogress.css -o ./assets/css/minify/nprogress.m
 tailwindcss -i ./assets/css/raw/style.css -o ./assets/css/minify/style.min.css --minify
 ```
 
-## Notes
+#### BaseUrl
 
-On Development, change base:
-
-```html
+```js
+// each .html
 <base href="/" />
-```
-
-On push, change base:
-
-```html
+or
 <base href="https://bakazero.github.io/try-github-pages/" />
+
+// settings.js
+export const baseUrl = "/";
+or
+export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 ```
