@@ -1,4 +1,4 @@
-import { cn } from "../../libraries/utilities.js";
+import { cn } from "../../libraries/tailwind.js";
 import { html, render } from "https://esm.run/uhtml@4.5.11";
 import MicroModal from "https://esm.run/micromodal@0.4.10";
 

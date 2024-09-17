@@ -1,3 +1,3 @@
-import { toast } from "../assets/js/libraries/utilities.js";
+import { toast } from "../assets/js/libraries/notify.js";
 
 toast.success("Selamat datang, admin!");

@@ -1,4 +1,4 @@
-import { cn } from "../../libraries/utilities.js";
+import { cn } from "../../libraries/tailwind.js";
 import { html, render } from "https://esm.run/uhtml@4.5.11";
 import tippy from "https://esm.run/tippy.js@6.3.7/headless";
 
