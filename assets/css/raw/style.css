@@ -13,6 +13,10 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 :root {
   --main-color: 200 40% 40%;
 }
