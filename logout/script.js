@@ -1,8 +1,8 @@
-import { removeAuth } from "../assets/js/libraries/cookie.js";
+import { removeAuth } from "../assets/js/libraries/cookies.js";
+import { baseUrl } from "../assets/js/libraries/settings.js";
 
-document.querySelector("ui-link[href='/logout']")?.addEventListener("click", async (event) => {
+document.querySelector("ui-link[href='logout']")?.addEventListener("click", async (event) => {
   event.preventDefault();
-  console.log("logout");
   await removeAuth();
-  window.location.assign("/login");
+  window.location.assign(`${baseUrl}login`);
 });

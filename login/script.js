@@ -1,5 +1,6 @@
 import { timeout } from "../assets/js/libraries/utilities.js";
-import { setAuth } from "../assets/js/libraries/cookie.js";
+import { setAuth } from "../assets/js/libraries/cookies.js";
+import { baseUrl } from "../assets/js/libraries/settings.js";
 
 const form = document.getElementById("login-form");
 if (form instanceof HTMLFormElement) {
@@ -15,7 +16,7 @@ if (form instanceof HTMLFormElement) {
     const token = "mhwahahahaha";
     await setAuth(token);
 
-    window.location.assign("/dashboard");
+    window.location.assign(`${baseUrl}dashboard`);
   });
 }
 
