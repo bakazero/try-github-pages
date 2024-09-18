@@ -1,5 +1,5 @@
-import { create, registerPlugin } from "https://cdn.jsdelivr.net/npm/filepond@4.31.3";
-import FilePondPluginFileValidateType from "https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-type@1.2.9";
+import { create, registerPlugin } from "https://cdn.jsdelivr.net/npm/filepond@4.31.3/+esm";
+import FilePondPluginFileValidateType from "https://cdn.jsdelivr.net/npm/filepond-plugin-file-validate-type@1.2.9/+esm";
 import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
 
 registerPlugin(FilePondPluginFileValidateType);

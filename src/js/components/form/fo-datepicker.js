@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
 import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
-import flatpickr from "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13";
+import flatpickrJS from "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/+esm";
 
 /**
  * @element fo-datepicker
@@ -91,12 +91,12 @@ class FormDatepicker extends HTMLElement {
     );
 
     this.hiddenComponent = this.querySelector("input");
-    this.flatpickr = flatpickr(this.hiddenComponent, {
+    this.flatpickr = flatpickrJS(this.hiddenComponent, {
       altInput: true,
       position: "auto center",
       altFormat: "j F Y",
       dateFormat: "Y-m-d",
-      appendTo: document.querySelector("#app-page"),
+      appendTo: document.body,
     });
 
     this.dateComponent = this.querySelector("input[readonly]");

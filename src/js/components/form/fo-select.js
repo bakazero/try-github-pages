@@ -1,5 +1,5 @@
 import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
-import Choices from "https://cdn.jsdelivr.net/npm/choices.js@11.0.2";
+import Choices from "https://cdn.jsdelivr.net/npm/choices.js@11.0.2/+esm";
 
 /**
  * @element fo-select

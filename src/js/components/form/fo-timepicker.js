@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
 import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
-import flatpickr from "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13";
+import flatpickrJS from "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/+esm";
 
 /**
  * @element fo-timepicker
@@ -75,14 +75,14 @@ class FormTimepicker extends HTMLElement {
     );
 
     this.component = this.querySelector("input");
-    this.flatpickr = flatpickr(this.component, {
+    this.flatpickr = flatpickrJS(this.component, {
       altInput: false,
       enableTime: true,
       noCalendar: true,
       dateFormat: "H:i",
       time_24hr: true,
       position: "auto center",
-      appendTo: document.querySelector("#app-page"),
+      appendTo: document.body,
     });
 
     this.component = this.querySelector("input[readonly]");
