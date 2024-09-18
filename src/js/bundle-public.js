@@ -1,3 +1,4 @@
+import "https://esm.run/uhtml@4.5.11";
 import "https://esm.run/iconify-icon@2.1.0";
 import "../js/components/ui/ui-link.js";
 import "../js/components/ui/ui-button.js";
