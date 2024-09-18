@@ -1,6 +1,6 @@
-import { html, render } from "https://esm.run/uhtml@4.5.11";
-import EditorJS from "https://esm.run/@editorjs/editorjs@2.30.6";
-import NestedList from "https://esm.run/@editorjs/nested-list@1.4.3";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
+import editorJS from "https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.30.6/dist/editorjs.mjs";
+import nestedList from "https://cdn.jsdelivr.net/npm/@editorjs/nested-list@1.4.3/+esm";
 
 /**
  * @element fo-editor
@@ -33,7 +33,7 @@ class FormEditor extends HTMLElement {
 
     this.component = this.querySelector("#editorjs");
     if (this.component instanceof HTMLElement) {
-      this.editor = new EditorJS({
+      this.editor = new editorJS({
         holder: this.component,
         minHeight: 0,
         placeholder: "Let`s write an awesome story!",
@@ -41,7 +41,7 @@ class FormEditor extends HTMLElement {
         tools: {
           list: {
             // @ts-ignore
-            class: NestedList,
+            class: nestedList,
             inlineToolbar: true,
             config: {
               defaultStyle: "unordered",

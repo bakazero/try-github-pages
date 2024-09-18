@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
-import { html, render } from "https://esm.run/uhtml@4.5.11";
-import flatpickr from "https://esm.run/flatpickr@4.6.13";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
+import flatpickr from "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13";
 
 /**
  * @element fo-timepicker

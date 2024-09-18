@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
-import { html, render } from "https://esm.run/uhtml@4.5.11";
-import MicroModal from "https://esm.run/micromodal@0.4.10";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
+import micromodal from "https://cdn.jsdelivr.net/npm/micromodal@0.4.10/+esm";
 
 /**
  * @element ui-dialog
@@ -50,7 +50,7 @@ class UIDialog extends HTMLElement {
       `
     );
 
-    MicroModal.init({
+    micromodal.init({
       awaitOpenAnimation: true,
       awaitCloseAnimation: true,
       disableScroll: true,
