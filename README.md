@@ -1,8 +1,10 @@
-# ULBI MBKM
+# Github Pages (MPA)
 
 - [uhtml](https://github.com/WebReflection/uhtml)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 - [Tailwind (Standalone-CLI)](https://tailwindcss.com/blog/standalone-cli)
+- [View Transition MPA](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API/Using#basic_mpa_view_transition)
+- [Render Blocking](https://fullystacked.net/render-blocking-on-purpose/)
 
 ### VS Code
 
