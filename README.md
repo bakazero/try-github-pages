@@ -29,7 +29,7 @@
 tailwindcss -i ./src/css/raw/style.css -o ./src/css/minify/style.min.css --watch
 ```
 
-- Minifying CSS
+#### Minifying CSS
 
 ```bash
 tailwindcss -i ./src/css/raw/choices.css -o ./src/css/minify/choices.min.css --minify
