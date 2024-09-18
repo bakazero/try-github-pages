@@ -1,6 +1,6 @@
-import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
-import editorJS from "https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.30.6/dist/editorjs.mjs";
-import nestedList from "https://cdn.jsdelivr.net/npm/@editorjs/nested-list@1.4.3/+esm";
+import { html, render } from "https://esm.run/uhtml@4.5.11";
+import editorJS from "https://esm.run/@editorjs/editorjs@2.30.6";
+import nestedList from "https://esm.run/@editorjs/nested-list@1.4.3";
 
 /**
  * @element fo-editor

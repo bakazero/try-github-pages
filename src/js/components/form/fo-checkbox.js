@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
-import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/index.min.js";
-import "https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js";
+import { html, render } from "https://esm.run/uhtml@4.5.11";
+import "https://esm.run/iconify-icon@2.1.0";
 import "./fo-label.js";
 /**
  * @element fo-checkbox
