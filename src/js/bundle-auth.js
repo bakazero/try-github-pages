@@ -1,5 +1,5 @@
 import "https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js";
-import "../js/custom/logout.js";
+import "../js/customs/logout.js";
 import "../js/components/ui/ui-link.js";
 import "../js/components/ui/ui-button.js";
 import "../js/components/ui/ui-popover.js";
