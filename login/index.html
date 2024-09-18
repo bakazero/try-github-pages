@@ -7,10 +7,9 @@
     <meta name="description" content="Ini login page" />
     <title>Login Page</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="expect" blocking="render" href="#rendered" />
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="src/js/guard-public.js" type="module"></script>
-    <script src="src/js/bundle-public.js" type="module" defer></script>
+    <script src="src/js/bundle-public.js" type="module" defer blocking="render" fetchpriority="high"></script>
     <script src="login/script.js" type="module" defer></script>
   </head>
 
