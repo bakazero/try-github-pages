@@ -45,7 +45,7 @@ tailwindcss -i ./src/css/raw/style.css -o ./src/css/minify/style.min.css --minif
 
 ```js
 // each .html
-<base href="/" />
+<base href="https://bakazero.github.io/try-github-pages/" />
 or
 <base href="https://bakazero.github.io/try-github-pages/" />
 
