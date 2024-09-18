@@ -1,6 +1,6 @@
-import { timeout } from "../assets/js/libraries/utilities.js";
-import { setAuth } from "../assets/js/libraries/cookies.js";
-import { baseUrl } from "../assets/js/libraries/settings.js";
+import { timeout } from "../src/js/libraries/utilities.js";
+import { setAuth } from "../src/js/libraries/cookies.js";
+import { baseUrl } from "../src/js/libraries/settings.js";
 
 const form = document.getElementById("login-form");
 if (form instanceof HTMLFormElement) {
