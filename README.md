@@ -26,7 +26,7 @@
 - Watch tailwind css
 
 ```bash
-tailwindcss -i ./src/css/raw/style.css -o ./src/css/minify/style.min.css --watch
+tailwindcss -i ./src/css/raw/main.css -o ./src/css/minify/main.min.css --watch
 ```
 
 #### Minifying CSS
@@ -37,8 +37,7 @@ tailwindcss -i ./src/css/raw/filepond.css -o ./src/css/minify/filepond.min.css -
 tailwindcss -i ./src/css/raw/flatpickr.css -o ./src/css/minify/flatpickr.min.css --minify
 tailwindcss -i ./src/css/raw/micromodal.css -o ./src/css/minify/micromodal.min.css --minify
 tailwindcss -i ./src/css/raw/notify.css -o ./src/css/minify/notify.min.css --minify
-tailwindcss -i ./src/css/raw/nprogress.css -o ./src/css/minify/nprogress.min.css --minify
-tailwindcss -i ./src/css/raw/style.css -o ./src/css/minify/style.min.css --minify
+tailwindcss -i ./src/css/raw/main.css -o ./src/css/minify/main.min.css --minify
 ```
 
 #### BaseUrl
