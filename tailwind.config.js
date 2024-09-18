@@ -6,9 +6,23 @@ function filterDefault(values) {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Open Sans Variable"', "sans-serif"],
+      },
+      height: {
+        screen: "100dvh",
+      },
+      width: {
+        screen: "100dvw",
+      },
+      colors: {
+        mainColor: "hsl(var(--main-color))",
+      },
+    },
   },
   plugins: [
     plugin(
