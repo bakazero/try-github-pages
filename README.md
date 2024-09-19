@@ -66,4 +66,4 @@ or
 bun switch-mode.js dev
 ```
 
-This command will rewrite your base url, and watch/minifying css
+This command will rewrite your base url, and watch/minifying tailwind css
