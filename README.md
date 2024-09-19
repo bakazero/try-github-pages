@@ -47,12 +47,12 @@ tailwindcss -i ./src/css/raw/main.css -o ./src/css/minify/main.min.css --minify
 ```js
 // each .html
 <base href="/" />
-or
+// or
 <base href="https://bakazero.github.io/try-github-pages/" />
 
 // settings.js
 export const baseUrl = "/";
-or
+// or
 export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 ```
 
