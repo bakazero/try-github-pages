@@ -1,4 +1,4 @@
-import { html, render } from "https://esm.run/uhtml@4.5.11";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
 /**
  * @element ui-badge
  *

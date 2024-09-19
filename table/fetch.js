@@ -1,5 +1,5 @@
 import { dummyPokemon } from "./dummy.js";
-import { html, render } from "https://esm.run/uhtml@4.5.11";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
 
 export const getAndRender = async (page) => {
   const tableData = document.getElementById("tableData");

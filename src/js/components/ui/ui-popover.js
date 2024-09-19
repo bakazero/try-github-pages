@@ -1,6 +1,6 @@
 import { cn } from "../../libraries/tailwind.js";
-import { html, render } from "https://esm.run/uhtml@4.5.11";
-import tippyJS from "https://esm.run/tippy.js@6.3.7/headless";
+import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
+import tippyJS from "https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/headless/+esm";
 
 /**
  * @element ui-popover

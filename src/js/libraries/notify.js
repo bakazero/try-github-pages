@@ -1,4 +1,4 @@
-import { Notyf } from "https://esm.run/notyf@3.10.0";
+import { Notyf } from "https://cdn.jsdelivr.net/npm/notyf@3.10.0/+esm";
 
 export const toast = new Notyf({
   duration: 3000,
