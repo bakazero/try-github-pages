@@ -13,10 +13,14 @@ export const removeAuth = async () => {
 };
 
 export const setFlashMessage = async (message) => {
-  await setCookieWithExpireSecond("flashMessage", message, 5);
+  await setCookieWithExpireSecond("flashMessage", message, 10);
 };
 
 export const getFlashMessage = async () => {
   const message = getCookie("flashMessage");
-  return message && message.length > 0 ? message : undefined;
+
+  if (!message || message.length === 0) return;
+
+  await deleteCookie("flashMessage");
+  return message;
 };
