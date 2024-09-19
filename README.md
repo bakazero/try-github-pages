@@ -45,14 +45,14 @@ tailwindcss -i ./src/css/raw/main.css -o ./src/css/minify/main.min.css --minify
 #### BaseUrl
 
 ```js
-// each .html
+// each .html dev-mode
 <base href="/" />
-// or
+// each .html prod-mode
 <base href="https://bakazero.github.io/try-github-pages/" />
 
-// settings.js
+// settings.js dev-mode
 export const baseUrl = "/";
-// or
+// settings.js prod-mode
 export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 ```
 
