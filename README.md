@@ -55,3 +55,15 @@ export const baseUrl = "/";
 or
 export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 ```
+
+## Switch Mode
+
+If you have bun installed, you can easily switch mode.
+
+```js
+bun switch-mode.js prod
+or
+bun switch-mode.js dev
+```
+
+This command will rewrite your base url, and watch/minifying css
