@@ -60,7 +60,7 @@ export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 
 If you have bun installed, you can easily switch mode.
 
-```js
+```bash
 bun switch-mode.js prod
 or
 bun switch-mode.js dev
