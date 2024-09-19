@@ -15,9 +15,11 @@ export const getAndRender = async (page) => {
     if (!data || data.length === 0) {
       return render(
         tableData,
-        html`<tr>
-          <td colspan="99" class="text-center text-gray-600">No Data</td>
-        </tr>`
+        html`
+          <tr>
+            <td colspan="99" class="text-center text-gray-600">No Data</td>
+          </tr>
+        `
       );
     }
 
