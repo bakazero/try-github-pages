@@ -1,7 +1,7 @@
 import { timeout } from "../src/js/libraries/utilities.js";
 import { setAuth, setFlashMessage } from "../src/js/libraries/cookies.js";
-import { baseUrl } from "../src/js/libraries/settings.js";
 import { formValidation } from "./validation.js";
+import { baseUrl } from "../src/js/customs/settings.js";
 
 const form = document.getElementById("login-form");
 if (form instanceof HTMLFormElement) {
