@@ -1,5 +1,5 @@
 import { timeout } from "../src/js/libraries/utilities.js";
-import { setAuth } from "../src/js/libraries/cookies.js";
+import { setAuth, setFlashMessage } from "../src/js/libraries/cookies.js";
 import { baseUrl } from "../src/js/libraries/settings.js";
 import { formValidation } from "./validation.js";
 
@@ -17,6 +17,7 @@ if (form instanceof HTMLFormElement) {
     const token = "mhwahahahaha";
     await setAuth(token);
 
+    await setFlashMessage("Login Success");
     window.location.assign(`${baseUrl}dashboard`);
   });
 }
