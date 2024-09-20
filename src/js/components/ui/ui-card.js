@@ -3,7 +3,7 @@ import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
 /**
  * @element ui-card
  *
- * @attr {string} [class]
+ * @attr {string} [className]
  */
 class UICard extends HTMLElement {
   constructor() {

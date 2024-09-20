@@ -6,7 +6,7 @@ import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
  *
  * @attr {"button" | "submit"} [type]
  * @attr {boolean} [disabled]
- * @attr {string} [class]
+ * @attr {string} [className]
  */
 class UIButton extends HTMLElement {
   constructor() {
@@ -20,7 +20,7 @@ class UIButton extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["disabled", "type", "class"];
+    return ["disabled", "type", "className"];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -38,7 +38,7 @@ class UIButton extends HTMLElement {
           class=${cn(
             "text-white bg-blue-700 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none",
             "disabled:cursor-not-allowed disabled:bg-blue-400 disabled:hover:bg-blue-400",
-            this.getAttribute("class")
+            this.getAttribute("className")
           )}
         >
           ${this.content}

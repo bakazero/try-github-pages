@@ -2,7 +2,7 @@ import { html, render } from "https://cdn.jsdelivr.net/npm/uhtml@4.5.11/+esm";
 /**
  * @element ui-badge
  *
- * @attr {string} [class]
+ * @attr {string} [className]
  */
 class UIBadge extends HTMLElement {
   constructor() {
