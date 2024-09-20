@@ -5,6 +5,7 @@
 - [Tailwind (Standalone-CLI)](https://tailwindcss.com/blog/standalone-cli)
 - [View Transition MPA](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API/Using#basic_mpa_view_transition)
 - [Render Blocking](https://fullystacked.net/render-blocking-on-purpose/)
+- [jsDelivr](https://www.jsdelivr.com/)
 
 ### VS Code
 
@@ -58,7 +59,7 @@ export const baseUrl = "https://bakazero.github.io/try-github-pages/";
 
 ## Switch Mode
 
-If you have bun installed, you can easily switch mode.
+If you have [bun](https://bun.sh/) installed, you can easily switch mode.
 
 ```bash
 bun switch-mode.js prod
